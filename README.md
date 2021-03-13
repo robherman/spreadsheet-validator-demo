@@ -4,7 +4,7 @@ This repo contains a demo application that showcases the Spreadsheet Validator l
 
 ## How use the demo app
 
-Download the zip file that you obtained from the Spreadsheet Validator library site, and extract it into a folder of your choice.
+Download the zip file that you obtained from the Spreadsheet Validator library site, and extract it into a `folder` of your choice.
 
 In the root of the project, execute `npm install`.
 
