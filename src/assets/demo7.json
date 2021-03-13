@@ -1,0 +1,13 @@
+{
+    "minColumns": 1,
+    "maxColumns": 20,
+    "fieldDelimiter": "|",
+    "columnProperties": [
+        {
+            "name": "formID",
+            "isUnique": true,
+            "fieldType": "int",
+            "position": 1
+        }
+    ]
+}

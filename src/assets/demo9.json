@@ -1,0 +1,13 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "name": "list",
+            "position": 1,
+            "allowedValues": ["A","C"],
+            "allowedValuesCaseSensitive": ["A","C","a","b"]
+            
+        }
+    ]
+    
+}

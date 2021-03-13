@@ -1,0 +1,6 @@
+{
+    "minColumns": 1,
+    "maxColumns": 5,
+    "fieldDelimiter": "|"
+    
+}

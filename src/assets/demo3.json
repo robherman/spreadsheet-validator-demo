@@ -1,0 +1,11 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "name": "date",
+            "isUnique": false,
+            "fieldType": "date",
+            "position": 2
+        }
+    ]
+}

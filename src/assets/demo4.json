@@ -1,0 +1,10 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "name": "decimal",
+            "fieldType": "decimal",
+            "position": 2
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "ignoreFirstRowIfInvalid": true,
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "name": "CUIL",
+            "notEmpty": true,
+            "position": 3
+        }
+    ]
+}

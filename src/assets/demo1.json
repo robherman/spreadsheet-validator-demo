@@ -1,0 +1,11 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "name": "ID",
+            "isUnique": true,
+            "fieldType": "int",
+            "position": 1
+        }
+    ]
+}

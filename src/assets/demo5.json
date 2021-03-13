@@ -1,0 +1,11 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+
+        {
+            "name": "patternTest",
+            "position": 2,
+            "pattern": "/@gmail/gi"
+        }
+    ]
+}

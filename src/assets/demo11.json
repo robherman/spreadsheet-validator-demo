@@ -1,0 +1,256 @@
+{
+    "minColumns": 27,
+    "maxColumns": 27,
+    "fieldDelimiter": "|",
+    "columnProperties": [
+        {
+            "name": "rnos",
+            "fieldType": "int",
+            "position": 1,
+            "maxLength": 6,
+            "minLength": 6,
+            "notEmpty": true
+        },
+        {
+            "name": "cuit_empleador",
+            "position": 2,
+            "customValidationRule": {
+                "functionName": "validateCuitCuil"
+            },
+            "notEmpty": true
+        },
+        {
+            "name": "cuil_titular",
+            "position": 3,
+            "customValidationRule": {
+                "functionName": "validateCuitCuil"
+            },
+            "notEmpty": true
+        },
+        {
+            "name": "parentesco",
+            "position": 4,
+            "allowedValues": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "notEmpty": true
+        },
+        {
+            "name": "cuil",
+            "position": 5,
+            "customValidationRule": {
+                "functionName": "validateCuitCuil"
+            },
+            "notEmpty": true,
+            "isUnique": true
+        },
+        {
+            "name": "documento_tipo",
+            "position": 6,
+            "allowedValues": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "DU",
+                "LE",
+                "LC",
+                "PA",
+                "CM",
+                "ET"
+            ],
+            "notEmpty": true
+        },
+        {
+            "name": "numero_docuento",
+            "fieldType": "int",
+            "position": 7,
+            "maxLength": 8,
+            "minLength": 7,
+            "notEmpty": true
+        },
+        {
+            "name": "nombre",
+            "position": 8,
+            "notEmpty": true
+        },
+        {
+            "name": "sexo",
+            "position": 9,
+            "allowedValues": [
+                "F",
+                "M"
+            ],
+            "notEmpty": true
+        },
+        {
+            "name": "estado_civil",
+            "position": 10,
+            "allowedValues": [
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07"
+            ],
+            "notEmpty": true
+        },
+        {
+            "name": "fecha_nacimiento",
+            "fieldType": "int",
+            "position": 11,
+            "notEmpty": true,
+            "maxLength": 8,
+            "minLength": 7
+        },
+        {
+            "name": "nacionalidad",
+            "fieldType": "int",
+            "position": 12,
+            "maxLength": 3,
+            "notEmpty": true
+        },
+        {
+            "name": "calle",
+            "position": 13
+        },
+        {
+            "name": "nro_puerta",
+            "position": 14
+        },
+        {
+            "name": "piso",
+            "position": 15
+        },
+        {
+            "name": "departamento",
+            "position": 16
+        },
+        {
+            "name": "localidad",
+            "position": 17
+        },
+        {
+            "name": "codigo_postal",
+            "position": 18,
+            "fieldType": "int"
+        },
+        {
+            "name": "provincia",
+            "fieldType": "int",
+            "position": 19,
+            "notEmpty": true,
+            "maxLength": 2
+        },
+        {
+            "name": "domicilio_tipo",
+            "position": 20,
+            "notEmpty": true,
+            "allowedValues": [
+                "01",
+                "02"
+            ]
+        },
+        {
+            "name": "telefono",
+            "position": 21
+        },
+        {
+            "name": "situacion_revista",
+            "position": 22,
+            "notEmpty": true,
+            "allowedValues": [
+                "0",
+                "10",
+                "11",
+                "12",
+                "13",
+                "50",
+                "51",
+                "52",
+                "53",
+                "99",
+                "98"
+            ]
+        },
+        {
+            "name": "incapacidad",
+            "position": 23,
+            "notEmpty": true,
+            "allowedValues": [
+                "00",
+                "01",
+                "0",
+                "1"
+            ]
+        },
+        {
+            "name": "tipo_beneficiario_titular",
+            "position": 24,
+            "notEmpty": true,
+            "allowedValues": [
+                "00",
+                "01",
+                "02",
+                "03",
+                "04",
+                "05",
+                "06",
+                "07",
+                "08",
+                "09",
+                "10",
+                "11",
+                "12"
+            ]
+        },
+        {
+            "name": "fecha_alta_obrasocial",
+            "position": 25,
+            "notEmpty": true,
+            "fieldType": "int",
+            "maxLength": 8,
+            "minLength": 7
+        },
+        {
+            "name": "fecha_presentacion",
+            "position": 26
+        },
+        {
+            "name": "A/B/M",
+            "position": 27,
+            "notEmpty": true,
+            "allowedValuesCaseSensitive": [
+                "A",
+                "B",
+                "M"
+            ]
+        }
+    ]
+}

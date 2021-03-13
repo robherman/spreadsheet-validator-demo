@@ -1,0 +1,12 @@
+{
+    "hasHeader": true,
+    "columnProperties": [
+        {
+            "position": 2,
+            "name": "email",
+            "customValidationRule": {
+                "functionName": "emailValid"
+            }
+        }
+    ]
+}

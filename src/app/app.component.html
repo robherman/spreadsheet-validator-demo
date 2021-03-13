@@ -1,0 +1,160 @@
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">This is an online demo. You can use it free to validate de data in any SPREADSHEET (csv,
+            xlsx, ods), just by defining a JSON with the validation rules. Also, you can buy the angular component to
+            use it in any project you want.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="http://www.import-javascript-angular-xlsx-csv-validator.com/" targt="_blank"
+                class="text-white">BUY Component</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>DEMO : Import SPREADSHEET Validator for Angular</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+        aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main role="main" class="container-fluid">
+
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+            aria-expanded="false" aria-controls="collapseOne">
+            Expand me to get examples!
+          </button>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <ul>
+            <li>
+              <strong>DEMO 0 : SPREADSHEET minColumns and maxColumns</strong>
+              <a href="/assets/demo0.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo0.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 1 : COLUMN unique, COLUMN fieldType INT</strong> &nbsp;
+              <a href="/assets/demo1.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo1.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 2 : SPREADSHEET Ignore First Row, COLUMN notEmpty - FALLA VALIDACION DE INT Y LA PRIMER FILA
+                NO LA OMITE </strong>
+              <a href="/assets/demo2.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo2.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 3 : COLUMN fieldType DATE </strong>
+              <a href="/assets/demo3.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo3.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 4 : COLUMN fieldType DECIMAL </strong>
+              <a href="/assets/demo4.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo4.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 5 : COLUMN pattern
+              </strong>
+              <a href="/assets/demo5.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo5.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 6 : COLUMN customValidationRule </strong>
+              <a href="/assets/demo6.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo6.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 7 : SPREADSHEET CSV with pipes</strong>
+              <a href="/assets/demo7.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo7.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 8 : COLUMN maxLenght, COLUMN minLength</strong>
+              <a href="/assets/demo8.csv" target="_blank" style="color:blue;">&nbsp;<strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo8.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+
+            <li>
+              <strong>DEMO 9 : COLUMN allowedValues, COLUMN allowedValuesCaseSensitive</strong>
+              <a href="/assets/demo9.xlsx" target="_blank" style="color:blue;">&nbsp; <strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo9.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+            <li>
+              <strong>DEMO 11 : IMPORT PADRON <span style="color:red;"></span></strong>
+              <a href="/assets/demo11.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
+              <a href="/assets/demo11.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="jumbotron">
+        <h4>Input</h4>
+        <hr />
+        <form>
+          <div class="form-group">
+            <input type="file" (change)="fileChangeEvent($event)"
+              accept=".ods, .csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" />
+          </div>
+          <div class="form-group">
+            <textarea name="settings" #settings rows="12" class="form-control"
+              placeholder="Please input a json settings file"></textarea>
+          </div>
+
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-1">
+      <form>
+        <div class="form-group">
+          <button [disabled]="loading" style="float:left;" type="submit" class="ml-1 btn btn-primary mb-2" *ngIf="file"
+            (click)="ProcesarArchivo()"><span *ngIf="loading">Validating...</span><span *ngIf="!loading">Validate
+              -></span></button>
+        </div>
+      </form>
+
+    </div>
+    <div class="col-sm-5">
+      <div class="jumbotron">
+        <h4>Output</h4>
+
+
+        <hr />
+        <div *ngIf="errors && (errors.columnFormatErrors ||  errors.dataValidationErrors)" style="color:red; word-wrap:break-word;">
+          <h4>Errors found:</h4>
+          <pre>{{errors | json}}</pre>
+        </div>
+        <br />
+        <!--div  *ngIf="dataJson"  style="color:blue;" >
+          <h5>Data:</h5>
+          <div>{{dataJson | json}}</div>
+        </div-->
+      </div>
+    </div>
+  </div>
+
+
+</main>

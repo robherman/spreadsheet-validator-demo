@@ -1,0 +1,11 @@
+{
+    "fieldDelimiter": ";",
+    "columnProperties": [
+        {
+            "position": 3,
+            "name": "form",
+            "maxLength": 7,
+            "minLength": 3
+        }
+    ]
+}
