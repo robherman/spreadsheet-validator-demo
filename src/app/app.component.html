@@ -46,7 +46,7 @@
         <div class="card-body">
           <ul>
             <li>
-              <strong>DEMO 0 : SPREADSHEET minColumns and maxColumns</strong>
+              <strong>DEMO 0 : SPREADSHEET minColumns and maxColumns </strong>&nbsp;
               <a href="/assets/demo0.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo0.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
@@ -56,53 +56,52 @@
               <a href="/assets/demo1.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 2 : SPREADSHEET Ignore First Row, COLUMN notEmpty - FALLA VALIDACION DE INT Y LA PRIMER FILA
-                NO LA OMITE </strong>
+              <strong>DEMO 2 : SPREADSHEET Ignore First Row, COLUMN notEmpty</strong>
               <a href="/assets/demo2.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo2.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 3 : COLUMN fieldType DATE </strong>
+              <strong>DEMO 3 : COLUMN fieldType DATE </strong>&nbsp;
               <a href="/assets/demo3.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo3.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 4 : COLUMN fieldType DECIMAL </strong>
+              <strong>DEMO 4 : COLUMN fieldType DECIMAL </strong>&nbsp;
               <a href="/assets/demo4.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo4.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
               <strong>DEMO 5 : COLUMN pattern
-              </strong>
+              </strong>&nbsp;
               <a href="/assets/demo5.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo5.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 6 : COLUMN customValidationRule </strong>
+              <strong>DEMO 6 : COLUMN customValidationRule </strong>&nbsp;
               <a href="/assets/demo6.xlsx" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo6.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 7 : SPREADSHEET CSV with pipes</strong>
+              <strong>DEMO 7 : SPREADSHEET CSV with pipes</strong>&nbsp;
               <a href="/assets/demo7.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo7.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
             <li>
-              <strong>DEMO 8 : COLUMN maxLenght, COLUMN minLength</strong>
-              <a href="/assets/demo8.csv" target="_blank" style="color:blue;">&nbsp;<strong>SPREADSHEET</strong></a> -
+              <strong>DEMO 8 : COLUMN maxLenght, COLUMN minLength</strong>&nbsp;
+              <a href="/assets/demo8.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo8.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
 
             <li>
-              <strong>DEMO 9 : COLUMN allowedValues, COLUMN allowedValuesCaseSensitive</strong>
-              <a href="/assets/demo9.xlsx" target="_blank" style="color:blue;">&nbsp; <strong>SPREADSHEET</strong></a> -
+              <strong>DEMO 9 : COLUMN allowedValues, COLUMN allowedValuesCaseSensitive</strong>&nbsp;
+              <a href="/assets/demo9.xlsx" target="_blank" style="color:blue;"> <strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo9.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
             </li>
-            <li>
+            <!--li>
               <strong>DEMO 11 : IMPORT PADRON <span style="color:red;"></span></strong>
               <a href="/assets/demo11.csv" target="_blank" style="color:blue;"><strong>SPREADSHEET</strong></a> -
               <a href="/assets/demo11.json" target="_blank" style="color:blue;"> <strong> JSON CONFIG</strong></a>
-            </li>
+            </li-->
           </ul>
         </div>
       </div>
@@ -148,10 +147,10 @@
           <pre>{{errors | json}}</pre>
         </div>
         <br />
-        <!--div  *ngIf="dataJson"  style="color:blue;" >
-          <h5>Data:</h5>
-          <div>{{dataJson | json}}</div>
-        </div-->
+        <div  *ngIf="data" style="color:blue;">
+          <h5>Valid Data:</h5>
+          <div>{{data | json}}</div>
+        </div>
       </div>
     </div>
   </div>
