@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { XlsxLibModule } from 'xlsx-lib';
+import { XlsxLibModule } from '@little-big-apps/xlsx-lib';
 
 @NgModule({
   declarations: [
